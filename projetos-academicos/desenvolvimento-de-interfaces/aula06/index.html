@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Interatividade - JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h2>Controle de Status do Sensor</h2>
+
+        <div id="status-box" class="status offline">
+            Status: <span id="status-texto">Desconectado</span>
+        </div>
+
+        <button id="btn-alternar">Ligar Sensor</button>
+
+        <hr>
+
+        <label for="campo-leitura">Leitura Térmica (°C):</label>
+        <input type="number" id="campo-leitura" placeholder="Ex: 25">
+        <p id="alerta-temp"></p>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

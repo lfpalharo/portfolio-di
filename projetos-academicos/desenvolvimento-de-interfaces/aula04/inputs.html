@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos de Inputs</title>
+        <style>
+            input[type="text"]{
+                color: blue;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="get">
+            <h1>Exemplos de Inputs</h1>
+            <hr>
+           
+            <label for="nome">Nome da Pessoa</label>
+            <input type="text" id="nome" size="30" maxlength="30" required placeholder="Nome Completo">
+            <br>
+            <label for="dta_nasc">Data de Nascimento</label>
+            <input type="date" id="dta_nasc" required>
+            <br>
+            <label for="cor">Cor do Cabelo</label>
+            <input type="color" id="cor" required>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required placeholder="Digite o seu endereço eletrônico">
+            <br>
+            <label for="salario">Salario</label>
+            <input type="number" id="salario" min="1500" max="100000" value="5000" required>
+
+
+            <hr>
+            <input type="submit" value="Enviar Dados">
+            &nbsp;&nbsp;
+            <input type="reset" value="Limpar Dados">
+        </form>
+    </body>
+</html>

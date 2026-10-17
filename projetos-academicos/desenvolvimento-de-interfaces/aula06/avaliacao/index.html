@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Painel de Controle e Monitoramento de Carga</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <main class="container">
+   <h1>Painel de Monitoramento</h1>
+
+
+   <!-- Painel de Indicador -->
+   <div id="painel-status" class="status normal">Operação Normal</div>
+
+
+   <!-- Controle de Alternância -->
+   <button id="btn-alternar">Alternar Modo de Operação</button>
+
+
+   <!-- Entrada de Dados Dinâmica -->
+   <div class="campo-grupo">
+     <label for="campo-carga">Peso Registrado (kg):</label>
+     <input type="number" id="campo-carga" placeholder="Digite a carga em kg">
+   </div>
+
+
+   <!-- Exibição de Mensagem -->
+   <p id="mensagem-alerta">Aguardando entrada de dados...</p>
+ </main>
+
+
+ <script src="js/avaliacao.js"></script>
+</body>
+</html>

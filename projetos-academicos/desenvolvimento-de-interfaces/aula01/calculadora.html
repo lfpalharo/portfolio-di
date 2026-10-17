@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <style>
+            h1{ color: blue;}
+            input[type="number"]{
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 1.2em;
+            }
+            button{
+                padding: 30px;
+                border-radius: 50%;
+                border: 2px solid blue;
+            }
+            #resultado{
+                font-size: 1.5em ;
+                color: blue;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <hr>
+        <p>
+            Número-1:
+            <input type="number" id="numero1" value="1">
+        </p>
+        <p>
+            Número-2:
+            <input type="number" id="numero2" value="2">
+        </p>
+        <p>
+        <button onclick="soma()">Calcular</button>
+        </p>
+        <p id="resultado"></p>
+    </body>
+    <script>
+        function soma(){
+                componente1 = document.getElementById("numero1");
+                componente2 = document.getElementById("numero2");
+                componente3 = document.getElementById("resultado");
+                let n = parseFloat(componente1.value) + parseFloat(componente2.value);
+                componente3.textContent = "Resultado = " +  n;
+        }
+    </script>
+</html>
